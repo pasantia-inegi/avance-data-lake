@@ -1,0 +1,318 @@
+---
+# title: "Capacitación en R y herramientas de productividad"
+# author: "Abril 2021"
+format:
+  revealjs:
+    auto-stretch: false
+    margin: 0
+    slide-number: true
+    scrollable: true
+    preview-links: auto
+    logo: imagenes/logo_portada2.png
+    css: ine_quarto_styles.css
+    # footer: <https://quarto.org>
+---
+
+#
+
+<!---
+# TODO: this does not work
+ .linea-superior[]
+.linea-inferior[] 
+--->
+
+<!---
+# TODO: this does not work
+ ![](imagenes/logo_portada2.png){.center style="width: 20%;"}   
+--->
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+<!---
+ <img src="imagenes/logo_portada2.png" style="width: 20%"/>  
+--->
+
+<img src="imagenes/logo_portada2.png" width="20%"/>  
+
+[**Avances proyecto piloto Lago de Datos**]{.big-par .center-justified}
+
+[**Proyecto Ciencia de Datos**]{.big-par .center-justified}
+
+[**Abril 2024**]{.big-par .center-justified}
+
+
+## ¿Quiénes somos?
+
+Proyecto Ciencia de Datos (Subdirección Técnica)
+
+. . .
+
+Surge aproximadamente en julio de 2023
+
+. . .
+
+Unidad integrada por 7 profesionales (geofísica, estadística, economía y sociología)
+
+. . .
+
+Apoyamos a diferentes unidades dentro de la institución 
+
+
+## Algunos proyectos
+
+
+![](imagenes/ejemplo_api_delitos.PNG){.absolute width="350" left=0}
+
+
+. . .
+
+
+
+![](imagenes/ejemplo_api_delitos2.PNG){.absolute width="350" right=50}
+
+
+
+## Algunos proyectos
+
+
+![](imagenes/donde_esta_el_censo.PNG){ width="450" }
+
+
+
+. . .
+
+
+![](imagenes/api_codificacion.PNG){width="550"}
+
+
+
+## Herramientas
+
+![](imagenes/herramientas.PNG){width="900"}
+
+
+
+# ¿Cómo ordenar todos estos trabajos y herramientas?
+
+
+## Hasta el momento
+
+
+Pasantía de 12 días en INEGI durante noviembre
+
+. . .
+
+Aprendizaje sobre lago de datos
+
+
+. . .
+
+
+Prueba de concepto en una máquina laboratorio
+
+  + 16 gigas RAM
+
+  + cores (modelo 2011)
+
+  + Disco 100 gigas
+
+
+
+## Desafíos
+
+Seguridad de la información
+
+. . .
+
+Datos no estructurados (texto e imágenes)
+
+. . .
+
+Grandes volúmenes de información (almacenamiento y procesamiento)
+
+. . .
+
+Integración con fuentes externas
+
+. . .
+
+Administración de flujos de datos (extracción, procesamiento y analítica)
+
+. . .
+
+Automatización de tareas
+
+
+
+## Tecnologías implementadas hasta el momento 
+
+
+![](imagenes/minio_logo.png){.absolute top=100 left=0 width="350"}
+
+. . .
+
+![](imagenes/hive_logo.png){.absolute top=100 right=50 width="200" height="150"}
+
+. . .
+
+
+![](imagenes/jupyter_logo.png){.absolute bottom=50 left=0 width="250" height="130"}
+
+
+. . . 
+
+![](imagenes/trino_logo.png){.absolute bottom=50 right=50 width="300" height="150"}
+
+
+
+
+. . .
+
+
+![](imagenes/docker_logo.png){.absolute bottom=230 right=400 width="300" height="150"}
+
+
+
+
+# Veamos un caso de uso
+
+
+## Paradatos
+
+Las encuestas del INE generan una gran cantidad de paradatos
+
+
+![](imagenes/tablets.jpg){.absolute top=100 left=0 width="350"}
+
+![](imagenes/survey_solutions.png){.absolute top=150 right=80 width="300" height="180"}
+
+
+. . .
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+**Tenemos información sobre todas las acciones de los y las recolectores**
+
+
+
+
+## Caso de uso: paradatos
+
+![](imagenes/paradatos.PNG){width="500" }
+
+
+:::{.fragment}
+
+Tiempos de entrevista
+
+Tiempos por módulo
+
+Rendimiento diario
+
+Diagnóstico temprano de problemas en la recolección
+
+Entre muchas otras cosas
+
+:::
+
+
+
+## Desafíos
+
+
+La ENUSC tiene 66.4 millones de registros
+
+. . .
+
+La ENUT tiene 166.1 millones de registros
+
+. . .
+
+Survey Solutions devuelve un archivo de texto plano de varios gigas
+
+. . .
+
+La descarga puede tardar bastante
+
+
+
+## Caso de uso: paradatos
+
+
+![](imagenes/clientes.PNG){width="1000" }
+
+
+## Caso de uso: paradatos
+
+Podemos trabajar con 166 millones de registros sin dificultades
+
+**En pocos segundos podemos procesar millones de datos**
+
+
+
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWMwemxmd3d0MGxqenZteWczamtrOHZueDZqZjNrZm9uNGc1ZnFtayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif){fig-align="center"}
+
+
+
+
+
+
+## Aprendizajes
+
+Aún estamos en una etapa de pilotaje
+
+. . .
+
+**El lago de datos nos permite**:
+
+Proveer seguridad para todas las etapas del proceso
+
+Encadenar el procesamiento en un flujo ordenado
+
+Acceso eficiente a datos
+
+## Próximos pasos
+
+Migrar la solución a una máquina un poco más poderosa
+
+. . .
+
+Terminar la implementación de algunos componentes
+
+. . .
+
+Primera experiencia de testeo con ENUSC 2024 (monitoreo de paradatos)
+
+. . .
+
+Migración del procesamiento del Registro Estadística de Población (REP) al lago de datos 
+
+. . .
+
+Llevar todos los procesos al mismo servidor
+
+#
+
+
+
+[**Avances Lago de Datos**]{.big-par .center-justified}
+
+[**Proyecto Ciencia de Datos**]{.big-par .center-justified}
+
+[**Abril 2024**]{.big-par .center-justified}
+
+
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
