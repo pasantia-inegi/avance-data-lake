@@ -89,7 +89,7 @@ Apoyamos a diferentes unidades dentro de la institución
 
 ## Herramientas
 
-![](imagenes/herramientas.PNG){width="900"}
+![](imagenes/herramientas.png){width="900"}
 
 
 
@@ -208,42 +208,58 @@ Las encuestas del INE generan una gran cantidad de paradatos
 
 ## Caso de uso: paradatos
 
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
 ![](imagenes/paradatos.PNG){width="500" }
+:::
 
+::: {.column width="40%"}
 
-:::{.fragment}
+:::{.incremental}
 
-Tiempos de entrevista
+- Tiempos de entrevista
 
-Tiempos por módulo
+- Tiempos por módulo
 
-Rendimiento diario
+- Rendimiento diario
 
-Diagnóstico temprano de problemas en la recolección
+- Diagnóstico temprano de problemas en la recolección
 
-Entre muchas otras cosas
+- Entre muchas otras cosas
 
 :::
+
+
+:::
+
+:::
+
 
 
 
 ## Desafíos
 
 
-La ENUSC tiene 66.4 millones de registros
+La Encuesta Nacional Urbana de Seguridad Ciudadana (ENUSC) tiene 66.4 millones de registros
 
 . . .
 
-La ENUT tiene 166.1 millones de registros
+La Encuesta Nacional del uso del Tiempo (ENUT) tiene 166.1 millones de registros
 
 . . .
 
-Survey Solutions devuelve un archivo de texto plano de varios gigas
+*Survey Solutions* devuelve un archivo de texto plano de varios gigas
 
 . . .
 
 La descarga puede tardar bastante
 
+. . .
+
+Restringir acceso a las tablas finales
 
 
 ## Caso de uso: paradatos
@@ -275,11 +291,11 @@ Aún estamos en una etapa de pilotaje
 
 **El lago de datos nos permite**:
 
-Proveer seguridad para todas las etapas del proceso
+- Proveer seguridad para todas las etapas del proceso
 
-Encadenar el procesamiento en un flujo ordenado
+- Encadenar el procesamiento en un flujo ordenado
 
-Acceso eficiente a datos
+- Acceso eficiente a datos
 
 ## Próximos pasos
 
@@ -299,7 +315,7 @@ Migración del procesamiento del Registro Estadística de Población (REP) al la
 
 . . .
 
-Llevar todos los procesos al mismo servidor
+Migrar algunos procesos que corren localmente al lago de datos 
 
 #
 
