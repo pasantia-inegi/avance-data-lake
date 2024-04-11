@@ -113,7 +113,7 @@ Prueba de concepto en una máquina laboratorio
 
   + 16 gigas RAM
 
-  + cores (modelo 2011)
+  + 4 cores (modelo 2011)
 
   + Disco 100 gigas
 
